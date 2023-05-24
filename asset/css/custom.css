@@ -1,0 +1,77 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.background-video {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #fff;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  transform: scale(1);
+}
+
+.scroll-down:before {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 6px);
+  transform: rotate(-45deg);
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  border: 2px solid white;
+  border-width: 0px 0 2px 2px;
+}
+
+.features {
+  padding: 50px;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 24px;
+}
+
+.feature {
+  display: inline-block;
+  width: 250px;
+  margin: 20px;
+}
+
+.feature img {
+  width: 50px;
+  height: 50px;
+}
+
+.feature h3 {
+  font-size: 18px;
+}
+
+.feature p {
+  font-size: 14px;
+}
